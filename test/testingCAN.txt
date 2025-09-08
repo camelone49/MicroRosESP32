@@ -1,0 +1,14 @@
+Cable Combination           CAN signal visible?         Makes sense?        voltage
+Red-Blue                                                                        0V
+Red-Green                                                                       0v
+Red-Yellow                                                                      0V
+Red-White                                                                       0v
+
+Blue-Green                                                                      -0.5V
+Blue-Yellow                                                                     12V
+Blue-White                                                                      19V
+
+Green-Yellow                                                                    0v
+Green-White                                                                     0V
+
+Yellow-White                        Ja                      Kind of             -4V veränderlich. vermutung: white CANH yellow CANL Widerstand: 114Ohm -> richtig!
