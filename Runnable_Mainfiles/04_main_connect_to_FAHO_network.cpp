@@ -9,8 +9,8 @@
 #include <WiFi.h>
 #include <Arduino.h>
 
-const char* ssid = "FAHO Classic";
-const char* password = "Mzde-o3pn-jwF1-SHUP-3zXa";
+const char* ssid = "";
+const char* password = "";
 
 void initWiFi() {
   WiFi.mode(WIFI_STA);

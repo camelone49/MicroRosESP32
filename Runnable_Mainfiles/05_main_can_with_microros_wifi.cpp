@@ -51,15 +51,13 @@ rcl_node_t node;
 rclc_executor_t executor;
 esp_timer_handle_t periodic_timer;
 
-//IPAddress agent_ip(10,0,43,55);
-IPAddress agent_ip(172, 20, 10, 7); 
+
+IPAddress agent_ip(); 
 size_t agent_port = 8888;
 
-//const char* SSID = "FAHO Classic";
-//const char* password = "Mzde-o3pn-jwF1-SHUP-3zXa";
 
-const char* SSID = "HiPhone (2)";
-const char* password = "hisham04";
+const char* SSID = "";
+const char* password = "";
 
 
 //MCP VARIABLES
@@ -175,11 +173,8 @@ void setup() {
     }   
     Serial.println("Ping succesful.");
 
-    //char ssid[] = "Faho Classic";
-    //char psk[]= "Mzde-o3pn-jwF1-SHUP-3zXa";
-
-    char ssid[] = "HiPhone (2)";
-    char psk[]= "hisham04";
+    char ssid[] = "";
+    char psk[]= "";
 
     set_microros_wifi_transports(ssid, psk, agent_ip, agent_port);
 

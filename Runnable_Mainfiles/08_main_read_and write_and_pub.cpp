@@ -56,23 +56,11 @@ rcl_node_t node;
 rclc_executor_t executor;
 esp_timer_handle_t periodic_timer;
 
-//IPAddress agent_ip(172,20,10,7); //brokk
-//IPAddress agent_ip(192, 168, 1, 167); //hiphne
-//IPAddress agent_ip(10,0,43,55); //FAHO network
-IPAddress agent_ip(192,168,0,101); //TP Link Router
-size_t agent_port = 8888;
+IPAddress agent_ip(); //TP Link Router
+size_t agent_port = ;
 
-//const char* SSID = "FAHO Classic";
-//const char* password = "Mzde-o3pn-jwF1-SHUP-3zXa";
-
-//const char* SSID = "HiPhone (2)";
-//const char* password = "hisham04";
-
-//const char* SSID = "Router_F5AF08_2.4G_Jetson";
-//const char* password = "innok444";
-
-const char* SSID = "TP-Link_E06C";
-const char* password = "97083641";
+const char* SSID = "";
+const char* password = "";
 
 
 //MCP VARIABLES
@@ -184,17 +172,8 @@ void setup() {
     }   
     Serial.println("Ping succesful.");
 
-    //char ssid[] = "Faho Classic";
-    //char psk[]= "Mzde-o3pn-jwF1-SHUP-3zXa";
-
-    //char ssid[] = "HiPhone (2)";
-    //char psk[]= "hisham04";
-
-    //char ssid[] = "Router_F5AF08_2.4G_Jetson";
-    //char psk[] = "innok444";
-
-    char ssid[] = "TP-Link_E06C";
-    char psk[] = "97083641";
+    char ssid[] = "";
+    char psk[] = "";
 
     Serial.println("Setting up ROS agent....");
     set_microros_wifi_transports(ssid, psk, agent_ip, agent_port);
